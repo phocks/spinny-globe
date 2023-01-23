@@ -62,7 +62,7 @@ function getSphere() {
   return new THREE.Mesh(geometry, material);
 }
 
-export const mountGlobe = ({ mountTo }: { mountTo: string }) => {
+export const mountGlobe = ({ mountTo }: { mountTo: any }) => {
   const land = getLandWireframe(landTopology);
   const sphere = getSphere();
   const scene = getScene();
@@ -80,8 +80,11 @@ export const mountGlobe = ({ mountTo }: { mountTo: string }) => {
   renderer.setSize(width, height);
   renderer.setPixelRatio(devicePixelRatio);
 
-  const mount = document.querySelector(mountTo);
-  if (mount) mount.appendChild(renderer.domElement);
+  // const mount = document.querySelector(mountTo);
+  // if (mount) mount.appendChild(renderer.domElement);
+
+  // const mount = document.querySelector(mountTo);
+  if (mountTo) mountTo.appendChild(renderer.domElement);
 
   // Spin the globe
   d3.timer(function (t) {

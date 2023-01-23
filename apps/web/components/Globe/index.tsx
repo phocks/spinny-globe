@@ -1,10 +1,13 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { mountGlobe } from "globe-vis";
 
 export default function Globe() {
+  const inputEl = useRef(null);
+
   useEffect(() => {
     console.log("ok");
-    mountGlobe({ mountTo: ".spinny-globe" });
+    mountGlobe({ mountTo: inputEl.current });
   }, []);
-  return <div className="spinny-globe" />;
+
+  return <div ref={inputEl} className="spinny-globe" />;
 }

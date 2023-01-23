@@ -7,8 +7,9 @@
     "preserveWatchOutput": true,
     "skipLibCheck": true,
     "noEmit": true,
-    "strict": false,
-    "resolveJsonModule": true
+    "strict": true,
+    "resolveJsonModule": true,
+    "noImplicitAny": false
   },
   "exclude": ["node_modules"]
 }
