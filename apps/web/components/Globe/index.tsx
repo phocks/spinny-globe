@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { mountGlobe, unmountGlobe } from "globe-vis";
+import { mountGlobe } from "globe-vis";
 
 export default function Globe() {
   const inputEl = useRef(null);
