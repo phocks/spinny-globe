@@ -1,7 +1,8 @@
 import { useEffect, useRef } from "react";
-import { mountGlobe } from "globe-vis";
+import { mountGlobe } from "./mountTo";
 
 export default function Globe() {
+  console.log("Globe component mounted")
   const inputEl = useRef(null);
 
   useEffect(() => {

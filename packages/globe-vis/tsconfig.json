@@ -9,7 +9,8 @@
     "noEmit": true,
     "strict": true,
     "resolveJsonModule": true,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "jsx": "react-jsx"
   },
   "exclude": ["node_modules"]
 }
