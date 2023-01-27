@@ -1,3 +1,3 @@
-import Globe from "./Globe";
+import ReactGlobe from "./Globe";
 
-export { Globe };
+export { ReactGlobe };

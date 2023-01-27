@@ -1,5 +1,6 @@
 import * as THREE from "three/build/three.min.js";
 import * as topojson from "topojson-client";
+// import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js"
 
 // D3 modules
 import * as d3Array from "d3-array";
@@ -80,10 +81,19 @@ export const mountGlobe = ({ mountTo }: { mountTo: any }) => {
   renderer.setSize(width, height);
   renderer.setPixelRatio(devicePixelRatio);
 
-  // const mount = document.querySelector(mountTo);
-  // if (mount) mount.appendChild(renderer.domElement);
+  // const controls = new OrbitControls(camera, renderer.domElement);
+  // controls.dampingFactor = 0.25;
+  // controls.enableZoom = false;
 
-  // const mount = document.querySelector(mountTo);
+  import("three/examples/jsm/controls/OrbitControls.js").then(
+    ({ OrbitControls }) => {
+      console.log(OrbitControls);
+      const controls = new OrbitControls(camera, renderer.domElement);
+      controls.dampingFactor = 0.25;
+      controls.enableZoom = false;
+    }
+  );
+
   if (mountTo) mountTo.appendChild(renderer.domElement);
 
   // Spin the globe
