@@ -1,6 +1,5 @@
 import * as THREE from "three/build/three.min.js";
 import * as topojson from "topojson-client";
-// import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js"
 
 // D3 modules
 import * as d3Array from "d3-array";
@@ -80,10 +79,6 @@ export const mountGlobe = ({ mountTo }: { mountTo: any }) => {
   // renderer.setClearColor(0x000000, 0); // default
   renderer.setSize(width, height);
   renderer.setPixelRatio(devicePixelRatio);
-
-  // const controls = new OrbitControls(camera, renderer.domElement);
-  // controls.dampingFactor = 0.25;
-  // controls.enableZoom = false;
 
   import("three/examples/jsm/controls/OrbitControls.js").then(
     ({ OrbitControls }) => {
