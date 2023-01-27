@@ -95,16 +95,14 @@ export const mountGlobe = ({ mountTo }: { mountTo: any }) => {
   );
 
   if (mountTo) mountTo.appendChild(renderer.domElement);
+  const t = 0;
+  const { x, y, z } = vertex([-t / 100, Math.sin(t / 5000) * 45], radius * 2.2);
+  camera.position.x = x;
+  camera.position.y = y;
+  camera.position.z = z;
 
   // Spin the globe
   d3.timer(function (t) {
-    const { x, y, z } = vertex(
-      [-t / 100, Math.sin(t / 5000) * 45],
-      radius * 2.2
-    );
-    camera.position.x = x;
-    camera.position.y = y;
-    camera.position.z = z;
     camera.lookAt(scene.position);
     renderer.render(scene, camera);
   });
