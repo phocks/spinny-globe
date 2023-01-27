@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { mountGlobe } from "./mountTo";
 
-export default function Globe() {
+function Globe() {
   console.log("Globe component mounted")
   const inputEl = useRef(null);
 
@@ -17,3 +17,5 @@ export default function Globe() {
 
   return <div ref={inputEl} className="spinny-globe" />;
 }
+
+export default Globe;

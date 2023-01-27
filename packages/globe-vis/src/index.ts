@@ -1,3 +1,3 @@
-import Globe from './Globe';
+import Globe from "./Globe";
 
-export default Globe;
+export { Globe };
