@@ -10,7 +10,9 @@
     "strict": true,
     "resolveJsonModule": true,
     "noImplicitAny": false,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "target": "es5",
+    "module": "esnext"
   },
   "exclude": ["node_modules"]
 }

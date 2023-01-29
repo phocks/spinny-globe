@@ -82,12 +82,15 @@ export const mountGlobe = ({ mountTo }: { mountTo: any }) => {
 
   import("three/examples/jsm/controls/OrbitControls.js").then(
     ({ OrbitControls }) => {
-      console.log(OrbitControls);
       const controls = new OrbitControls(camera, renderer.domElement);
       controls.dampingFactor = 0.25;
       controls.enableZoom = false;
     }
   );
+
+  // We don't really need an outline on this do we?
+  const canvas = renderer.domElement;
+  canvas.style.outline = "none";
 
   if (mountTo) mountTo.appendChild(renderer.domElement);
   const t = 0;

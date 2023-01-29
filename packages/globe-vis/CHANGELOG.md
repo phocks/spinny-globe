@@ -1,5 +1,17 @@
 # globe-vis
 
+## 0.0.8
+
+### Patch Changes
+
+- No outline and es5
+
+## 0.0.7
+
+### Patch Changes
+
+- Just making this compatablieeeee
+
 ## 0.0.5
 
 ### Patch Changes
