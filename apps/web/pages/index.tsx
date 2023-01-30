@@ -1,5 +1,5 @@
-import { ThreeScene } from "globe-fiber";
+import { ReactGlobe } from "globe-vis";
 
 export default function Web() {
-  return <ThreeScene />;
+  return <ReactGlobe />;
 }

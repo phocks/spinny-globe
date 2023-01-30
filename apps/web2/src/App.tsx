@@ -1,12 +1,13 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
-import "./App.css";
+import styles from "./App.module.css";
+console.log(styles);
 
 import { ThreeScene } from "globe-fiber";
 
 function App() {
   return (
-    <div className="App">
+    <div className={styles.root}>
       <ThreeScene />
     </div>
   );

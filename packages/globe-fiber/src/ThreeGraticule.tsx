@@ -8,7 +8,7 @@ const ThreeGraticule = () => {
     <group>
       {GeoJsonGeometry && (
         <lineSegments geometry={new GeoJsonGeometry(geoGraticule10(), 1)}>
-          <lineBasicMaterial color="#3c3c3c" />
+          <lineBasicMaterial color="#efefef" />
         </lineSegments>
       )}
     </group>

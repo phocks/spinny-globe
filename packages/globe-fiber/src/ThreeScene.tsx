@@ -9,16 +9,16 @@ const ThreeScene = () => {
     <Canvas
       camera={{
         fov: 75,
-        position: [0, 0, 2.1],
+        position: [0, 0, 2.0],
       }}
       style={{
         cursor: "move",
       }}
     >
       <OrbitControls enableRotate={true} enableZoom={false} enablePan={false} />
-      <ambientLight intensity={1.3} />
+      <ambientLight intensity={4.3} />
       <pointLight position={[-10, -10, -10]} intensity={0.4} />
-      <ThreeMesh></ThreeMesh>
+      <ThreeMesh />
     </Canvas>
   );
 };
