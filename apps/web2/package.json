@@ -1,5 +1,5 @@
 {
-  "name": "testing",
+  "name": "web2",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +8,15 @@
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "globe-fiber": "*"
+  },
   "devDependencies": {
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@vitejs/plugin-react-swc": "^3.0.0",
     "typescript": "^4.9.3",
     "vite": "^4.0.0"
   }

@@ -1,4 +1,4 @@
 module.exports = {
-  reactStrictMode: true,
-  transpilePackages: ["ui", "globe-vis"],
+  reactStrictMode: false,
+  transpilePackages: ["ui", "globe-vis", "globe-fiber"],
 };

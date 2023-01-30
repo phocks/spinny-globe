@@ -84,7 +84,9 @@ export const mountGlobe = ({ mountTo }: { mountTo: any }) => {
     ({ OrbitControls }) => {
       const controls = new OrbitControls(camera, renderer.domElement);
       controls.dampingFactor = 0.25;
-      controls.enableZoom = false;
+      // controls.enableZoom = false;
+      // controls.minZoom = 0.9;
+      controls.maxZoom = 2;
     }
   );
 

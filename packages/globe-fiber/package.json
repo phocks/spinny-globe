@@ -1,0 +1,20 @@
+{
+  "name": "globe-fiber",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "React three.js globe",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@react-three/drei": "^9.56.8",
+    "@react-three/fiber": "^8.10.1",
+    "d3-geo": "^3.1.0",
+    "three": "^0.149.0",
+    "three-geojson-geometry": "^1.1.8"
+  }
+}
