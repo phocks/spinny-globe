@@ -16,8 +16,8 @@ const ThreeScene = () => {
       }}
     >
       <OrbitControls enableRotate={true} enableZoom={false} enablePan={false} />
-      <ambientLight intensity={4.3} />
-      <pointLight position={[-10, -10, -10]} intensity={0.4} />
+      <ambientLight color={"white"} intensity={0x666666} />
+      {/* <pointLight position={[-10, -10, -10]} intensity={5.4} /> */}
       <ThreeMesh />
     </Canvas>
   );

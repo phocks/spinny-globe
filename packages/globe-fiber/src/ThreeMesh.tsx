@@ -6,8 +6,9 @@ import ThreeCountries from "./ThreeCountries";
 const ThreeMesh = () => {
   return (
     <mesh>
-      <sphereGeometry args={[1, 32]} />
-      <meshPhongMaterial color="#ffffff" transparent={false} opacity={0.99} />
+      {/* <boxGeometry /> */}
+      <sphereGeometry args={[1, 32]}></sphereGeometry>
+      <meshPhongMaterial color="#ffffff" transparent={false} opacity={0.9} />
       <ThreeGraticule />
       <ThreeCountries />
     </mesh>
